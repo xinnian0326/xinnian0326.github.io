@@ -1,7 +1,3 @@
-/* 首页文章卡片 */
-#recent-posts > .recent-post-item{
-    background:rgba(255, 255, 255, 0.9);
-}
 /* 首页侧栏卡片 */
 .card-widget{
   background:rgba(255, 255, 255, 0.9)!important;
@@ -37,4 +33,143 @@ div#category{
 [data-theme="dark"]
   #recent-posts > .recent-post-item{
     background:rgba(0, 0, 0, 0.9)!important;
-    }    
+    }  
+[data-theme="dark"]      
+/* 分页页面 */
+div#page{
+  background: rgba(0, 0, 0, 0.9);
+}
+[data-theme="dark"]
+/* 归档页面 */
+div#archive{
+  background: rgba(0, 0, 0, 0.9);
+}
+[data-theme="dark"]
+/* 标签页面 */
+div#tag{
+  background: rgba(0, 0, 0, 0.9);
+}
+[data-theme="dark"]
+/* 分类页面 */
+div#category{
+  background: rgba(0, 0, 0, 0.9);
+}    
+/*此为笔者网站较为个性化的鼠标指针样式，可结合个人需要自行修改*/
+body {
+	cursor: url(/shubiao/Arrow.cur), default;
+}
+select{
+	cursor: url(/shubiao/Hand.cur), pointer;
+}
+button,a:hover{
+	cursor: url(/shubiao/Hand2.cur), pointer;
+}
+input{
+	cursor:url(/shubiao/Help.cur), text;	
+}
+textarea,input:focus{
+	cursor:url(/shubiao/IBeam.cur), text;	
+}
+code{
+	cursor: url(/shubiao/Handwriting.cur), default;	
+}
+pre>code{
+	cursor: url(/shubiao/Copy.cur), default;	
+}
+/* 页脚透明 */
+#footer{
+  background: transparent!important;
+}
+/* 页脚黑色透明玻璃效果移除 */
+#footer::before{
+    background: transparent!important;
+  }
+/* 头图透明 */
+#page-header{
+  background: transparent!important;
+}
+/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
+#page-header.post-bg:before {
+  background-color: transparent!important;
+}
+/*夜间模式伪类遮罩层透明*/
+[data-theme="dark"]
+  #footer::before{
+      background: transparent!important;
+    }
+[data-theme="dark"]
+  #page-header::before{
+    background: transparent!important;
+    } 
+/* 樱花特效样式 */
+.canvas-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* 樱花特效样式 */
+.canvas-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* 樱花特效样式 */
+.canvas-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.read-mode .canvas-container {
+  display: none;
+}
+@keyframes bganimation {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+/* 滚动条 */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #80c0eb;
+  background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #e58a8a;
+}
